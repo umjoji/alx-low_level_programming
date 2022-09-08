@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=0-main.c && gcc -E $CFILE > c
+gcc -E $CFILE > c
