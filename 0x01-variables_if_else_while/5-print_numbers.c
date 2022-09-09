@@ -10,7 +10,6 @@
 int main(void)
 {
 	int n;
-	int m;
 
 	n = 0;
 	do {
