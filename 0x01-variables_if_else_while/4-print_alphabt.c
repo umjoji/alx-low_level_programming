@@ -10,7 +10,7 @@
 int main(void)
 {
 	int n;
-	
+
 	n = 97;
 	do {
 
