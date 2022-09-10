@@ -21,8 +21,11 @@ int main(void)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
-				putchar(44);
-				putchar(32);
+				if (i != 8)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
