@@ -10,13 +10,11 @@
   */
 int main(void)
 {
-	char source[] = "0123456789";
 	int i;
-	int len = strlen(source);
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(source[i]);
+		putchar(i + '0');
 	}
 	putchar(10);
 	return (0);
