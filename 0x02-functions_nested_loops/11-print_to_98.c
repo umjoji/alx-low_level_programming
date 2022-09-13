@@ -16,7 +16,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		while true
+		while (1)
 		{
 			if (n < 98)
 			{
