@@ -10,3 +10,4 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 void times_table(void);
 void jack_bauer(void);
+void print_times_table(int n);
