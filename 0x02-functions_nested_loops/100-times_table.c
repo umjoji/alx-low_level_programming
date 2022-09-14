@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the multiplication table up to n 
+ * print_times_table - prints the multiplication table up to n
  *
  *@n: Integer
  *
  * Return: Void
  */
 
-void times_table(int n)
+void print_times_table(int n)
 {
-	int i, j, num, n;
+	int i, j, num;
 
 	for (i = 0; i < (n + 1); i++)
 	{
