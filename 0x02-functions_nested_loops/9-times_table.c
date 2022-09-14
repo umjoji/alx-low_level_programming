@@ -21,8 +21,8 @@ void times_table(void)
 			}
 			else if (j == 9 && num > 10)
 			{
-				_putchar((num / 100) + 48);
-				_putchar((num % 100) + 48);
+				_putchar((num / 10) + 48);
+				_putchar((num % 10) + 48);
 			}
 			else if (j != 9 && num < 10)
 			{
@@ -33,8 +33,8 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((num / 100) + 48);
-				_putchar((num % 100) + 48);
+				_putchar((num / 10) + 48);
+				_putchar((num % 10) + 48);
 				_putchar(',');
 				_putchar(' ');
 			}
