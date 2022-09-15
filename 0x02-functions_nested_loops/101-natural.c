@@ -21,7 +21,7 @@ int sum_of_multiples_3_and_5(int n)
 }
 
 /**
- * main - entru point
+ * main - entry point
  *
  * Return: zero
  */
@@ -31,6 +31,6 @@ int main(void)
 
 	num = 1024;
 	r = sum_of_multiples_3_and_5(num);
-	printf("%d", r);
+	printf("%d\n", r);
 	return (0);
 }
