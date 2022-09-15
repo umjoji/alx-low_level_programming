@@ -13,7 +13,7 @@ int main(void)
 	int64_t num1 = 1;
 	int64_t num2 = 2;
 	int64_t nextnum = num1 + num2;
-	int64_t sum = 22;
+	int64_t sum = 2;
 
 	for (i = 4; i <= 50; i++)
 	{
