@@ -1,4 +1,4 @@
-#insert "main.h"
+#include "main.h"
 
 /**
  * largest_number - returns the largest of three numbers
@@ -8,7 +8,7 @@
  * Return: largest number
  */
 
-int largest_number(int a, int b, in c)
+int largest_number(int a, int b, int c)
 {
 	int largest;
 
