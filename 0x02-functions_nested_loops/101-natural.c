@@ -4,12 +4,14 @@
  *@n: integer below 1024
  *Return: sum of multiples of three and five
  */
-int sum_of_multiples_3_and_5(int)
+int sum_of_multiples_3_and_5(int n)
 {
 	int i, sum;
 
 	sum = 0;
-	for (i = 1; i < 1024; i++)
+	n = 1024;
+
+	for (i = 1; i < n; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
 		{
