@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>
-#define LARGETST 10000000000
+#define LARGEST 10000000000
 
 /**
  * main - entry point
@@ -12,7 +12,7 @@ int main(void)
 {
 	/* Divide the number into two parts and create holders for them */
 	int i;
-	uint64_t fpart_num1 = 0, spart_num1 = 1;  
+	uint64_t fpart_num1 = 0, spart_num1 = 1;
 	uint64_t fpart_num2 = 0, spart_num2 = 2;
 	uint64_t num_holder1, num_holder2, num_holder3;
 
