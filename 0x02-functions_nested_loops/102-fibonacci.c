@@ -23,14 +23,14 @@ int main(void)
 		num1 = num2;
 		num2 = nextnum;
 		nextnum = num1 + num2;
-		
+
 		if (i < 50)
 		{
 			printf("%" PRId64 ", ", nextnum);
 		}
 		else
 		{
-			printf("%" PRId64 "", nextnum);
+			printf("%" PRId64 "\n", nextnum);
 		}
 	}
 	return (0);
