@@ -10,7 +10,6 @@ int sum_of_multiples_3_and_5(int n)
 	int i, sum;
 
 	sum = 0;
-	n = 1024;
 	for (i = 1; i < n; i++)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
@@ -21,3 +20,17 @@ int sum_of_multiples_3_and_5(int n)
 	return (sum);
 }
 
+/**
+ * main - entru point
+ *
+ * Return: zero
+ */
+int main(void)
+{
+	int num, r;
+
+	num = 1024;
+	r = sum_of_multiples_3_and_5(num);
+	printf("%d is the sum of multiples of 3 and 5 below %d.\n", r, num);
+	return (0);
+}
