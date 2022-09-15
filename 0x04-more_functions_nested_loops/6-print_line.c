@@ -18,6 +18,7 @@ void print_line(int n)
 		}
 		else if (n <= 0)
 		{
+			_putchar('\n');
 			break;
 		}
 	}
