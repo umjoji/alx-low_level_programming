@@ -31,6 +31,7 @@ int main(void)
 		else
 		{
 			printf("%" PRId64 "", nextnum);
+		}
 	}
 	return (0);
 }
