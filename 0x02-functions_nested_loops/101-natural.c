@@ -31,6 +31,6 @@ int main(void)
 
 	num = 1024;
 	r = sum_of_multiples_3_and_5(num);
-	printf("%d is the sum of multiples of 3 and 5 below %d.\n", r, num);
+	printf("%d", r);
 	return (0);
 }
