@@ -11,10 +11,7 @@ int main(void)
 	int i, r;
 
 	i = 0;
-	r = positive_or_negative(i);
-	if (r == 0)
-	{
-		printf("%d is zero", r);
-	}
+	positive_or_negative(i);
+
 	return (0);
 }
