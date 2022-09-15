@@ -4,7 +4,7 @@
  *@n: integer below 1024
  *Return: sum of multiples of three and five
  */
-int sum_of_multiples_3_and_5(int n)
+int sum_of_multiples_3_and_5(int)
 {
 	int i, sum;
 
