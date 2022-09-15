@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the multiplication table up to n
- *
- *@n: Integer
+ * print_times_table - prints the multiplication table up to 15
+ * @n: integer between 0 and 15
  *
  * Return: Void
  */
@@ -12,16 +11,16 @@ void print_times_table(int n)
 {
 	int i, j, num;
 
-	while (num < 100)
+	if (n > 0 || n < 15)
 	{
-		for (i = 0; i < (n + 1); i++)
+		for (i = 0; i < 10; i++)
 		{
-			for (j = 0; j < (n + 1); j++)
+			for (j = 0; j < 10; j++)
 			{
 				num = i * j;
 				if (j == 0)
 				{
-					_putchar(num + '0');
+				_putchar(num + '0');
 				}
 				else if (num >= 100)
 				{
@@ -48,8 +47,6 @@ void print_times_table(int n)
 					_putchar((num % 10) + 48);
 				}
 			}
-			_putchar('\n');
-		}
+		}	_putchar('\n');
 	}
-
 }
