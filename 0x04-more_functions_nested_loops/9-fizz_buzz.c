@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			printf(" Fizz Buzz");
+			printf(" FizzBuzz");
 		}
 		else if (i % 5 == 0)
 		{
@@ -32,7 +32,7 @@ int main(void)
 			printf(" %d", i);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
 
