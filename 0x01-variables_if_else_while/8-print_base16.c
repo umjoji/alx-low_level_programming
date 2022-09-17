@@ -5,25 +5,25 @@
 
 /**
   * main - Entry point
-  *
+  * Program to print hexadecimals
   * Return: Always 0 (Success)
   */
 int main(void)
 {
-	int i;
-	int j;
+	int front_num;
+	int rear_letter;
 
-	j = 97;
-	for (i = 0; i < 16; i++)
+	rear_letter = 97;
+	for (front_num = 0; front_num < 16; front_num++)
 	{
-		if (i < 10)
+		if (front_num < 10)
 		{
-			putchar(i + '0');
+			putchar(front_num + '0');
 		}
-		else if (i >= 10)
+		else if (front_num >= 10)
 		{
-			putchar(j);
-			j++;
+			putchar(rear_letter);
+			rear_letter++;
 		}
 	}
 	putchar(10);
