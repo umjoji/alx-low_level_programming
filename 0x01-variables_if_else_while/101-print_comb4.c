@@ -5,27 +5,27 @@
 
 /**
   * main - Entry point
-  *
+  * Print a combinantion of three digits
   * Return: Always 0 (Success)
   */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int front_num;
+	int middle_num;
+	int rear_num;
 
-	for (i = 0; i < 10; i++)
+	for (front_num = 0; front_num < 10; front_num++)
 	{
-		for (j = 0; j < 10; j++)
+		for (middle_num = 0; middle_num < 10; middle_num++)
 		{
-			for (k = 0; k < 10; k++)
+			for (rear_num = 0; rear_num < 10; rear_num++)
 			{
-				if (i != j && i < j && i != k && i < k && j != k && j < k)
+				if (front_num != middle_num && front_num < middle_num && front_num != rear_num && front_num < rear_num && middle_num != rear_num && middle_num < rear_num)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					if (i != 7)
+					putchar(front_num + '0');
+					putchar(middle_num + '0');
+					putchar(rear_num + '0');
+					if (front_num != 7)
 					{
 						putchar(44);
 						putchar(32);
