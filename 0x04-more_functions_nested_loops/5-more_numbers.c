@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print numbers from 0 to 14
+ * more_numbers - print numbers from 0 to 14
  * Return: void
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
