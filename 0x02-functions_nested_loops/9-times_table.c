@@ -8,8 +8,10 @@
 
 void times_table(void)
 {
+	/* initialize multipliers */
 	int i, j, num;
 
+	/* start loops */
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
