@@ -5,22 +5,22 @@
 
 /**
   * main - Entry point
-  *
+  * Prints a combinantion of two digits
   * Return: Always 0 (Success)
   */
 int main(void)
 {
-	int i;
-	int j;
+	int front_num;
+	int rear_num;
 
-	for (i = 0; i < 10; i++)
+	for (front_num = 0; front_num < 10; front_num++)
 	{
-		for (j = 0; j < 10; j++)
+		for (rear_num = 0; rear_num < 10; rear_num++)
 		{
-			if (i != j && i < j)
+			if (front_num != rear_num && front_num < rear_num)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
+				putchar(front_num + '0');
+				putchar(rear_num + '0');
 				if (i != 8)
 				{
 					putchar(44);
