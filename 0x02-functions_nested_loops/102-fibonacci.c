@@ -4,7 +4,7 @@
 
 /**
  * main - entry point
- *
+ * Fibonacci sequence
  * Return: 0
  */
 int main(void)
