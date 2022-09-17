@@ -13,7 +13,7 @@ int main(void)
 
 	n = 97;
 	do {
-
+		/* Remove letters e and q */
 		if (n == 101 || n == 113)
 		{
 			n = n + 1;
