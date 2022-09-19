@@ -18,7 +18,7 @@ void puts_half(char *str)
 		{
 			break;
 		}
-		else if (str[i] == '.')
+		else if (str[i] == '\n')
 		{
 			break;
 		}
