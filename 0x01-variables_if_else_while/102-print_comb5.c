@@ -10,21 +10,21 @@
   */
 int main(void)
 {
-	int i;
-	int j;
+	int front_num;
+	int rear_num;
 
-	for (i = 0; i < 100; i++)
+	for (front_num = 0; front_num < 100; front_num++)
 	{
-		for (j = 0; j < 100; j++)
+		for (rear_num = 0; rear_num < 100; rear_num++)
 		{
-			if (i < j)
+			if (front_num < rear_num)
 			{
-				putchar((i / 10) + 48);
-				putchar((i % 10) + 48);
+				putchar((front_num / 10) + 48);
+				putchar((front_num % 10) + 48);
 				putchar(32);
-				putchar((j / 10) + 48);
-				putchar((j % 10) + 48);
-				if (i != 98 || j != 99)
+				putchar((rear_num / 10) + 48);
+				putchar((rear_num % 10) + 48);
+				if (front_num != 98 || rear_num != 99)
 				{
 					putchar(44);
 					putchar(32);

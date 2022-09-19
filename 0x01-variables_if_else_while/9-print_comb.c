@@ -5,17 +5,17 @@
 
 /**
   * main - Entry point
-  *
+  * print a combinantion of numbers
   * Return: Always 0 (Success)
   */
 int main(void)
 {
-	int i;
+	int num;
 
-	for (i = 0; i < 10; i++)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(i + '0');
-		if (i < 9)
+		putchar(num + '0');
+		if (num < 9)
 		{
 			putchar(44);
 			putchar(32);
