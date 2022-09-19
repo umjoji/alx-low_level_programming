@@ -18,6 +18,10 @@ void puts_half(char *str)
 		{
 			break;
 		}
+		else if (str[i] == '.')
+		{
+			break;
+		}
 		_putchar(str[i]);
 	}
 	_putchar('\n');
