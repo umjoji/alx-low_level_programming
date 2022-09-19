@@ -8,13 +8,15 @@
 
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
 	/* iterate through the string */
-	for (i = 0; ; i++)
-	if (s[i] == '\0')
+	for (;; i++)
 	{
-		break;
+		if (s[i] == '\0')
+		{
+			break;
+		}
 	}
 	return (i);
 }
