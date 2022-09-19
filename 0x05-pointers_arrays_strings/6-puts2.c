@@ -10,13 +10,20 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	for (;; i += 2)
+	for (;; i ++)
 	{
 		if (str[i] == '\0')
 		{
 			break;
 		}
-		_putchar(str[i]);
+		else if (i % 2 != 0)
+		{
+			continue;
+		}
+		else if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
