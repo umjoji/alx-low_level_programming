@@ -16,7 +16,7 @@ int main(void)
 	while (check < 2772)
 	{
 		random_num = rand() % 128;
-		if ((c + r) > 2772)
+		if ((check + random_num) > 2772)
 		{
 			break;
 		}
@@ -27,3 +27,4 @@ int main(void)
 	printf("%c\n", (2772 - check));
 
 	return (0);
+}
