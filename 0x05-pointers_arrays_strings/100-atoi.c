@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	while (s[len] != '\0')
 	{
-		if (size > 0 && s[len] < '0' || s[len] > '9')
+		if ((size > 0) && (s[len] < '0') || (s[len] > '9'))
 		{
 			break;
 		}
@@ -33,7 +33,7 @@ int _atoi(char *s)
 		len++;
 	}
 
-	for (i = count - size; i < count; i++)
+	for (i = len - size; i < len; i++)
 	{
 		oi = oi + ((*(s + i) - 48) * m);
 		m /=10;
