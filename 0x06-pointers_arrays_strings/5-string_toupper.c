@@ -17,7 +17,7 @@ char *string_toupper(char *str)
 		j = str[i];
 		if (j > 96 && j < 123)
 		{
-			k = j -32;
+			k = j - 32;
 			*(str + i) = k;
 		}
 
