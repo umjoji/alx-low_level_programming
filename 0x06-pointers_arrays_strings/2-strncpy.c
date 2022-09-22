@@ -12,18 +12,17 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int num = 0;
-	int len_dest = _strlen(dest);
 
-	/* iterate through length of src and add to destinantion */
+	/* copy source to destinantion */
 	for (; num < n && src[num]; num++)
 	{
 		*(dest + num) = *(src + num);
 	}
 
+	/* pad with null */
 	for (; num < n; num++)
 	{
 		dest[num] = '\0';
-	}
 	}
 	return (dest);
 }
