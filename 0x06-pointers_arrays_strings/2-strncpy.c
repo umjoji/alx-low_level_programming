@@ -15,18 +15,15 @@ char *_strncpy(char *dest, char *src, int n)
 	int len_dest = _strlen(dest);
 
 	/* iterate through length of src and add to destinantion */
-	for (; num <= n - 1; num++)
+	for (; num < n && src[num]; num++)
 	{
 		*(dest + num) = *(src + num);
 	}
-	
-	/* if length of source string less than length od destinantion string, feel remainder with null bytes */
-	if (dest[num + 1] == '\0')
+
+	for (; num < n; num++)
 	{
-		for (; num < len_dest; num++)
-		{
-			dest[num] = '\0';
-		}
+		dest[num] = '\0';
+	}
 	}
 	return (dest);
 }
