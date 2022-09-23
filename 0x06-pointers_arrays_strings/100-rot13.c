@@ -18,10 +18,10 @@ char *rot13(char *str)
 		/* iterate through arrays */
 		for (i = 0; i < 52; i++)
 		{
-			if (*(s + count) == alphabet[i])
+			if (*(str + num) == alphabet[i])
 			{
 				/* swap characters */
-				*(s + count) = rot13[i];
+				*(str + num) = rot13[i];
 				break;
 			}
 		}
