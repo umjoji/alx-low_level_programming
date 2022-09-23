@@ -8,7 +8,7 @@
 
 char *leet(char *str)
 {
-	int num, i;
+	int num = 0, i;
 	int lowercase[] = {'a', 'e', 'o', 't', 'l'};
 	int uppercase[] = {'A', 'E', 'O', 'T', 'L'};
 	int numbers[] = {'4', '3', '0', '7', '1'};
