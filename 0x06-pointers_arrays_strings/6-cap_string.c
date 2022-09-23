@@ -20,7 +20,7 @@ char *cap_string(char *str)
 	}
 
 	num++;
-	
+
 	/* iterate through string */
 	while (*(str + num) != '\0')
 	{
@@ -38,6 +38,6 @@ char *cap_string(char *str)
 		}
 		num++;
 	}
-	
+
 	return (str);
 }
