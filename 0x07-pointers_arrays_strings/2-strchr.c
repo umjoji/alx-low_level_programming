@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int num = 0;
+	unsigned int num = 0;
 
 	/* iterate through string */
 	while (s[num] != '\0')
