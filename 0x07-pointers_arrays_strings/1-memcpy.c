@@ -12,7 +12,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int num = 0;
 
-	/* copy bytes from src to dest */ 
+	/* copy bytes from src to dest */
 	while (num < n)
 	{
 		*(dest + num) = *(src + num);
