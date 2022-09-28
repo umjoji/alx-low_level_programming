@@ -1,5 +1,4 @@
 #include "main.h"
-#include "3-strcmp.c"
 
 /**
  * _strstr - locates a substring
@@ -11,20 +10,26 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int num;
+	char *haystack2, *needle2;
 
 	/* iterate through haystack */
-	for (num = 0; *(haystack + num) != '\0'; num++)
+	while (*haystack != '\0')
 	{
-		if (_strcmp((haystack + num), needle) == 0)
-		{
-			return (haystack + num);
-		}
-		else if (haystack[num] == '\0')
-		{
-			return ('\0');
-		}
+		haystack2 = haystack;
+		needle2 = needle;
 
+		
+		while (*haystack != '\0' && *needle2 != '\0' && *haystack == *needle2)
+		{
+			haystack++;
+			needle2++;
+		}
+		if (!*needle2)
+		{
+			return (haystack2);
+		}
+		/* move search location by 1 */
+		haystack = haystack2 + 1;
 	}
 
 	return ('\0');
