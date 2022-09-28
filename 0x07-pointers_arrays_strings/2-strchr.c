@@ -21,5 +21,10 @@ char *_strchr(char *s, char c)
 		}
 		num++;
 	}
+	if (!c)
+	{
+		return (s + num);
+	}
+
 	return ('\0');
 }
