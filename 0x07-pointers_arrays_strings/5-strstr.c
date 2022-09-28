@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			return (haystack + num);
 		}
-		
+
 	}
 
 	return ('\0');
