@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 	/* iterate through haystack */
 	for (num = 0; *(haystack + num) != '\0'; num++)
 	{
-		if (_strcmp(haystack + num, needle) == 0)
+		if (_strcmp((haystack + num), needle) == 0)
 		{
 			return (haystack + num);
 		}
