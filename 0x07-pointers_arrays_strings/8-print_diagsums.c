@@ -14,7 +14,7 @@ void print_diagsums(int *a, int size)
 	int num, sum1 = 0, sum2 = 0;
 
 	/* iterate through matrix */
-	for (num = 0; num < size * size; num++)
+	for (num = 0; num < (size * size); num++)
 	{
 		/* add diagonal from the left */
 		if (num % (size + 1) == 0)
