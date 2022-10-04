@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen_recursion.c"
 
 /**
  * comparer - compares each character of the string
