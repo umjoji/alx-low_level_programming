@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 			sum1 += *(a + num);
 
 		/* add diagonal from the right */
-		if (num % (size - 1) == 0)
+		if (num % (size - 1) == 0 && num != 0 && num < (size * size - 1))
 			sum2 = *(a + num);
 	}
 	printf("%d, %d\n", sum1, sum2);
