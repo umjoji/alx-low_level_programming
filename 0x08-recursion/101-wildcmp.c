@@ -25,7 +25,7 @@ int wildcmp(char *s1, char *s2)
 	if (*s1 == *s2)
 	{
 		/* recursively check next characters */
-		return (wildcmp(s1 + 1, s2 + 1);
+		return (wildcmp(s1 + 1, s2 + 1));
 	}
 
 	/* check if first character of s2 is '*' */
