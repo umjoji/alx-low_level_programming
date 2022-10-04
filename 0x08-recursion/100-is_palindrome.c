@@ -15,7 +15,7 @@ int comparer(char *s, int n1, int n2)
 	{
 		if (n1 == n2 || n1 == n2 + 1)
 			return (1);
-		return (0 + comparer(s, n1 + 1, n2 -1));
+		return (0 + comparer(s, n1 + 1, n2 - 1));
 	}
 	return (0);
 }
