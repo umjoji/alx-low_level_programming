@@ -27,6 +27,8 @@ int power_function(int num, int sqr_root)
 
 int _sqrt_recursion(int n)
 {
+	int sqr_root = 0;
+
 	if (n < 0)
 		return (-1);
 	else if (n == 0)
