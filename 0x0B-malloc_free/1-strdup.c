@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "2-strlen.c"
+#include "9-strcpy.c"
 
 /**
  * _strdup - returns a pointer to a string copy
