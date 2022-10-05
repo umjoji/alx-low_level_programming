@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char str_cat;
+	char *str_cat;
 	unsigned int num1, num2, num3, end;
 
 	if (s1 == NULL)
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 		;
 
 	/* allocate memory for str_cat */
-	str_cat = (char *) malloc(sizeof(char) * (num1 + num2 + 1));
+	str_cat = malloc(sizeof(char) * (num1 + num2 + 1));
 
 	if (str_cat == NULL)
 	{
