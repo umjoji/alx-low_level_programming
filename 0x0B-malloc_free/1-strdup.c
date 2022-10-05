@@ -1,8 +1,5 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include "2-strlen.c"
-#include "9-strcpy.c"
 
 /**
  * _strdup - returns a pointer to a string copy
@@ -13,19 +10,26 @@
 char *_strdup(char *str)
 {
 	char *dup_str;
+	unsigned int num1, num2;
 	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
+	/* iterate through str */
+	for (num1 = 0; str[num1] != '\0'; num1++)
+		;
+
 	/* allocate the sapce for the duplicate string */
-	dup_str = (char *) malloc(_strlen(str) + 1);
+	dup_str = (char *) malloc(sizeof(char) * (num1 + 1));
 	
 	if (dup_str == NULL)
 		return (NULL);
 
-	_strcpy(dup_str, str);
+	/* duplicate string */
+	for (num2 = 0; num2 <= num1; num2++)
+		dup_str[num2] = str[num2];
 	
 	return (dup_str);
 }
