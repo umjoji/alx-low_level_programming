@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "2-strlen.c"
-#include "9-strcpy.c"
+
 
 /**
  * _strdup - returns a pointer to a string copy
@@ -20,7 +19,7 @@ char *_strdup(char *str)
 	}
 
 	/* allocate the sapce for the duplicate string */
-	dup_str = (char *) malloc(strlen(str) + 1);
+	dup_str = (char *) malloc(_strlen(str) + 1);
 	
 	if (dup_str == NULL)
 		return (NULL);
