@@ -31,17 +31,17 @@ int **alloc_grid(int width, int height)
 		array_out[num1] = malloc(width * sizeof(int));
 		if (array_out[num1] == NULL)
 		{
-			for (num1 - 1; num1 >= 0; num1--)
+			for (num1--; num1 >= 0; num1--)
 				free(array_out[num1]);
 			free(array_out);
-			return (NULL):
+			return (NULL);
 		}
 	}
 
 	/* Add elements to array */
 	for (num1 = 0; num1 < height; num1++)
 		for (num2 = 0; num2 < width; num2++)
-			gridout[num1][num2] = 0;
+			array_out[num1][num2] = 0;
 
 	return (array_out);
 }
