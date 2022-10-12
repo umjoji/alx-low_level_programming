@@ -25,7 +25,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			/* since cmp returns 1 for match */
 			if ((*cmp)(array[i]))
 			{
-				return(i);
+				return (i);
 			}
 		}
 	}
