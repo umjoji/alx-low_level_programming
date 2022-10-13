@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 
 	/* Get array length */
 	arr_len = max - min + 1;
-	
+
 	/* allocate space for array */
 	arr_ptr = malloc(sizeof(int) * (arr_len));
 
