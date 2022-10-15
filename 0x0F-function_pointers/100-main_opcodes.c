@@ -9,10 +9,10 @@
  * Return: 0 always
  */
 
-int main(int argc, argc *argv[])
+int main(int argc, char *argv[])
 {
 	char *opc = (char *) main;
-	int i, num_bytes;
+	int i, nbytes;
 
 	if (argc != 2)
 	{
@@ -20,7 +20,7 @@ int main(int argc, argc *argv[])
 		exit(1);
 	}
 
-	num_bytes = atoi(argv[1]);
+	nbytes = atoi(argv[1]);
 
 	if (nbytes < 0)
 	{
