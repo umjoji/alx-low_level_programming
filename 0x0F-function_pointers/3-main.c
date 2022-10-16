@@ -32,11 +32,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	
+
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
 	printf("%d\n", operation(a, b));
 
-	return(0);
+	return (0);
 }
