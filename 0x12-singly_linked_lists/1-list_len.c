@@ -3,7 +3,7 @@
 
 /**
  * list_len - returns the number of elements in a linked list
- * @h - node/struct
+ * @h: node/struct
  *
  * Return: number of elements
  */
