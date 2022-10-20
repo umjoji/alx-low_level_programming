@@ -18,12 +18,12 @@ size_t print_list(const list_t *h)
 	if (h->str == NULL)
 	{
 		printf("[0] (nil)\n");
-		h = h->;	/* move to next struct */
+		h = h->next;	/* move to next struct */
 		nodes += 1;
 	}
 
 	/* iterate and chack if struct is NULL */
-	for (; h != NULL; h = h->)
+	for (; h != NULL; h = h->next)
 	{
 		printf("[%u] (%s)\n", h->len, h->str);
 		nodes += 1;
