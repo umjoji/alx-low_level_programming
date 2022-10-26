@@ -5,7 +5,7 @@
  * pop_listint - deletes the head node of a listint_t list
  * @head: head node
  *
- * Return: returns the nodes data and 0 if node is 
+ * Return: returns the nodes data and 0 if node is
  * empty
  */
 
